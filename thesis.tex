@@ -1,0 +1,92 @@
+\documentclass{cacthesis}
+
+% Define your additional packages here
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+% Set to Bachelor or Master
+\newcommand{\thesistype}{Master}
+
+% Add the bibliography to the table of contents
+\KOMAoptions{bibliography=totoc}
+
+\begin{document}
+
+	\frontmatter
+	
+	%%%%%%%%%%%%%
+	%% Title page
+	%%%%%%%%%%%%%
+	\title{Title}
+	\subtitle{Longer subtitle (if required)} % Delete subtitle if not required
+	\author{Author}
+	\date{\today}
+	\subject{\thesistype{} Thesis}
+	
+	\publishers{
+		\small
+		\begin{tabular}{r l}
+			Supervisors:  & Prof. Sebastian Faust, Ph.D. \\
+			& 2nd supervisor \\
+		\end{tabular}
+	}
+	\maketitle
+	
+	\section*{Abstract}
+	Write an abstract
+	
+	\newpage
+	
+	%TODO Delete this comment for the final submission:
+	\textcolor{red}{\textbf{!!! Prüfen Sie, dass der folgende Text aktuell ist (entsprechend der formalen Regeln des Studienbüros) !!! \\
+	!!! Check that this text is up to date (according to formal rules of the examination office) !!!}}
+	
+	\section*{Erklärung zur Abschlussarbeit gemäß § 22 Abs. 7 APB TU Darmstadt}
+	
+	Hiermit versichere ich, \textcolor{red}{\textbf{Vorname Name}}, die vorliegende \thesistype-Thesis gemäß § 22 Abs. 7 APB der TU Darmstadt ohne Hilfe Dritter und nur mit den angegebenen Quellen und Hilfsmitteln angefertigt zu haben. Alle Stellen, die Quellen entnommen wurden, sind als solche kenntlich gemacht worden. Diese Arbeit hat in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde vorgelegen. 
+	
+	Mir ist bekannt, dass im Falle eines Plagiats (§38 Abs.2 APB) ein Täuschungsversuch vorliegt, der dazu führt, dass die Arbeit mit 5,0 bewertet und damit ein Prüfungsversuch verbraucht wird. Abschlussarbeiten dürfen nur einmal wiederholt werden.
+	
+	Bei einer Thesis des Fachbereichs Architektur entspricht die eingereichte elektronische Fassung dem vorgestellten Modell und den vorgelegten Plänen.
+	
+	\vspace{10pt}
+	\hrule
+	
+	\section*{English translation for information purposes only:\\Thesis Statement pursuant to § 22 paragraph 7 of APB TU Darmstadt}
+	
+	I herewith formally declare that I, \textcolor{red}{\textbf{first name last name}}, have written the submitted thesis independently pursuant to § 22 paragraph 7 of APB TU Darmstadt. I did not use any outside support except for the quoted literature and other sources mentioned in the paper. I clearly marked and separately listed all of the literature and all of the other sources which I employed when producing this academic work, either literally or in content. This thesis has not been handed in or published before in the same or similar form.
+	
+	I am aware, that in case of an attempt at deception based on plagiarism (§38 Abs. 2 APB), the thesis would be graded with 5,0 and counted as one failed examination attempt. The thesis may only be repeated once.
+	
+	For a thesis of the Department of Architecture, the submitted electronic version corresponds to the presented model and the submitted architectural plans.
+	
+	\vspace{10pt}
+	\hrule
+	\vspace{70pt}
+	
+	\noindent\begin{tabular}{l@{\hskip 1in}l}
+		\makebox[1.8in]{\hrulefill} & \makebox[3.5in]{\hrulefill}\\
+		Datum / Date & Unterschrift / Signature
+	\end{tabular}
+
+	\newpage
+
+	\input{ai_tools_statement}
+
+	\tableofcontents
+	
+	\mainmatter
+	
+	\chapter{First Chapter}
+		Some content with a citation for a paper~\cite{diffie1976new}.
+		\section{Section 1.1}
+		\subsection{Subsection 1.1.1}
+		\section{Section 1.2}
+		
+	\chapter{Second Chapter}
+	
+	\bibliographystyle{alpha}
+	\bibliography{refs}
+	
+	\appendix
+\end{document}
